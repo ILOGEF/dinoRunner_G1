@@ -45,11 +45,14 @@ class Dinosaur():
             self.dino_duck = False
             self.dino_jump = False
 
-        if self.step_index <= 10:
+        if self.step_index >= 25:
             self.step_index = 0    
-    
+#Tarea: Mover patas del dinosaurio
+#Cambié los valores de menor a mayor en las lineas 48 Y 54,
+#Cambié el numero de la linea 48, before 10; after 25, más cómodo a la vista en la ejecución de cambio de patitas
+
     def run(self):
-        self.image = RUNNING[0] if self.step_index < 5 else RUNNING[1]
+        self.image = RUNNING[0] if self.step_index > 5 else RUNNING[1]
         self.dino_rect = self.image.get_rect()
         self.dino_rect.x = self.X_POS 
         self.dino_rect.y = self.Y_POS +1
