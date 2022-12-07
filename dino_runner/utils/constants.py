@@ -4,8 +4,8 @@ import os
 # Global Constants
 TITLE = "Chrome Dino Runner"
 SCREEN_HEIGHT = 600
-SCREEN_WIDTH = 1100
-FPS = 30
+SCREEN_WIDTH = 1800
+FPS = 144
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
 # Assets Constants
